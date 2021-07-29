@@ -7,9 +7,11 @@
   background-color: $color-cerulean;
 }
 .container-hero {
-  background-image: url("/modulo-1-evaluacion-final-AlexandraLR/src/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 568px;
 
   // TABLET
   @media all and (min-width: 768px) {
@@ -23,10 +25,56 @@
   }
 }
 
+.box1 {
+  width: 100%;
+  height: 284px;
+  justify-content: center;
+  text-align: center;
+  color: $color-white;
+  border: solid red 2px;
+  position: absolute;
+  margin-top: -17.7em;
+}
+
+.uppertext {
+  text-align: center;
+  font-family: $font-family-title;
+  text-transform: uppercase;
+  width: 15rem;
+}
+.upperhero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.titlehero {
+  text-align: center;
+  width: 19rem;
+  text-transform: uppercase;
+  font-family: $font-family-title;
+  font-size: 42px;
+  align-items: center;
+  line-height: 55px;
+}
+.subtitlehero {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 10px;
+  font-family: $font-family-subtitle;
+  font-size: 16px;
+  align-items: center;
+}
 .scrolldown {
-  width: 20px;
-  height: 11.7px;
+  margin-top: 45px;
+  margin-left: 123px;
+  margin-right: 122px;
+  margin-bottom: 45px;
+  width: 45px;
+  height: 45px;
   padding: 18px 12px 15.3px 13px;
-  border-radius: 50%;
   background-color: $color-white;
+  border-radius: 50%;
 }
