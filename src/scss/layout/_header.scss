@@ -28,20 +28,26 @@
 .box1 {
   width: 100%;
   height: 284px;
+  margin-top: 284px;
   justify-content: center;
   text-align: center;
   color: $color-white;
   border: solid red 2px;
-  position: absolute;
   margin-top: -17.7em;
+
+  @media all and (min-width: 768px) {
+    height: 384px;
+    margin-top: -24em;
+    //   width: 33rem;
+  }
+  // DESKTOP
+  @media all and (min-width: 1280px) {
+    height: 384px;
+    margin-top: -24em;
+    //   width: 33rem;
+  }
 }
 
-.uppertext {
-  text-align: center;
-  font-family: $font-family-title;
-  text-transform: uppercase;
-  width: 15rem;
-}
 .upperhero {
   display: flex;
   flex-direction: column;
@@ -58,14 +64,39 @@
   font-size: 42px;
   align-items: center;
   line-height: 55px;
+
+  @media all and (min-width: 768px) {
+    font-size: 80px;
+    line-height: 106px;
+    width: 33rem;
+  }
+  // DESKTOP
+  @media all and (min-width: 1280px) {
+    font-size: 100px;
+    line-height: 132px;
+  }
 }
 .subtitlehero {
+  height: 32px;
   text-align: center;
   text-transform: capitalize;
   margin-top: 10px;
   font-family: $font-family-subtitle;
   font-size: 16px;
   align-items: center;
+
+  //TABLET
+  @media all and (min-width: 768px) {
+    height: 32px;
+    font-size: 24px;
+    margin-top: 20px;
+
+    // DESKTOP
+    @media all and (min-width: 1280px) {
+      font-size: 24px;
+      margin-top: 0px;
+    }
+  }
 }
 .scrolldown {
   margin-top: 45px;
@@ -77,4 +108,19 @@
   padding: 18px 12px 15.3px 13px;
   background-color: $color-white;
   border-radius: 50%;
+
+  //TABLET
+  @media all and (min-width: 768px) {
+    margin-top: 30px;
+    margin-left: 362px;
+    margin-right: 361px;
+    margin-bottom: 45px;
+  }
+  // DESKTOP
+  @media all and (min-width: 1280px) {
+    margin-top: 30px;
+    margin-left: 618px;
+    margin-right: 617px;
+    margin-bottom: 13px;
+  }
 }
