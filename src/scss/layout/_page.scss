@@ -1,3 +1,7 @@
+// --------------------------ARTICLE---------------------------------//
+.page__main {
+  width: 100%;
+}
 .article-one {
   background-color: $color-white;
   margin-top: 30px;
@@ -13,14 +17,14 @@
   font-family: $font-family-subtitle;
   text-transform: capitalize;
 
-  //tablet
+  //--TABLET
   @media all and (min-width: 768px) {
     max-width: 216px;
     margin-left: 39px;
     margin-right: 39px;
   }
 
-  // DESKTOP
+  //--DESKTOP
   @media all and (min-width: 1280px) {
     max-width: 360px;
     font-size: 16px;
@@ -37,6 +41,7 @@
   font-family: $font-family-title;
   text-transform: capitalize;
 
+  //--TABLET
   @media all and (min-width: 768px) {
     max-width: 690px;
     font-size: 26px;
@@ -44,7 +49,7 @@
     margin-right: 39px;
   }
 
-  // DESKTOP
+  //--DESKTOP
   @media all and (min-width: 1280px) {
     max-width: 730px;
     font-size: 32px;
@@ -62,7 +67,7 @@
   font-family: $font-family-subtitle;
   text-transform: capitalize;
 
-  //TABLET
+  //--TABLET
   @media all and (min-width: 768px) {
     max-width: 690px;
     font-size: 20px;
@@ -70,7 +75,7 @@
     margin-right: 39px;
   }
 
-  // DESKTOP
+  //--DESKTOP
   @media all and (min-width: 1280px) {
     max-width: 730px;
     font-size: 20px;
@@ -88,13 +93,14 @@
   margin-bottom: 45px;
   margin-top: 20px;
 
+  //--TABLET
   @media all and (min-width: 768px) {
     width: 91px;
     height: 45px;
     margin-left: 39px;
   }
 
-  // DESKTOP
+  //--DESKTOP
   @media all and (min-width: 1280px) {
     width: 160px;
     height: 45px;
@@ -117,17 +123,66 @@
   font-weight: 500;
   line-height: 45px;
 
-  //TABLET
+  //--TABLET
   @media all and (min-width: 768px) {
     margin-left: 33.5px;
     margin-right: 32.5px;
     margin-bottom: 60px;
   }
 
-  // DESKTOP
+  //--DESKTOP
   @media all and (min-width: 1280px) {
     margin-left: 67px;
     margin-right: 68px;
     margin-bottom: 60px;
   }
+}
+
+--------------------------GRID---------------------------------//
+.grid-purchase {
+  background-color: $color-iceblue;
+  width: 320px;
+  height: 624px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  //   grid-template-columns: 30px 93px 93px 93px;
+  grid-template-areas: "item-title item-title" "item-one item-two item-three";
+}
+
+.item-title {
+  width: 290px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  font-size: 24px;
+  color: $color-black;
+  font-family: $font-family-title;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.gridtitle {
+  height: 30px;
+  width: 184px;
+  margin-top: 45px;
+  margin-left: 68px;
+  margin-right: 68px;
+  font-family: $font-family-title;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.gridtext {
+  height: 63px;
+  width: 180px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-family: $font-family-subtitle;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.item-one {
 }
