@@ -84,6 +84,7 @@
 }
 
 .button-back {
+  cursor: pointer;
   width: 76px;
   height: 45px;
   border: 2px solid $color-brightorange;
@@ -104,6 +105,16 @@
     width: 160px;
     height: 45px;
     margin-left: 275px;
+  }
+}
+
+.button-back:hover {
+  color: $color-white;
+  transition: color ease 1s;
+  background-color: $color-brightorange;
+  // border: 2px solid $color-brightorange;
+  .button-go {
+    color: $color-white;
   }
 }
 
@@ -278,34 +289,21 @@
 }
 
 .button-orange {
+  cursor: pointer;
   width: 184px;
   height: 45px;
   background-color: $color-brightorange;
   border-radius: 22.5px;
+  margin-top: 45px;
   margin-bottom: 60px;
-  margin-top: 22.5px;
-  margin-left: 68px;
-  margin-right: 68px;
-
-  //--TABLET
-  @media all and (min-width: 768px) {
-    // width: 91px;
-    // height: 45px;
-    // margin-left: 39px;
-  }
-
-  //--DESKTOP
-  @media all and (min-width: 1280px) {
-    // width: 160px;
-    // height: 45px;
-    // margin-left: 275px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-more {
   height: 45px;
   width: 124px;
-  margin-left: 68;
+  margin: auto;
   text-decoration: none;
   text-align: center;
   color: $color-white;
@@ -313,18 +311,30 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 45px;
+}
 
-  //--TABLET
-  @media all and (min-width: 768px) {
-    // margin-left: 33.5px;
-    // margin-right: 32.5px;
-    // margin-bottom: 60px;
+.button-orange:hover {
+  color: $color-white;
+  background-color: $color-white;
+  border: solid 2px $color-brightorange;
+  animation-name: intro;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  // border: 2px solid $color-darkgreyblue;
+  .button-more {
+    color: $color-brightorange;
   }
+}
 
-  //--DESKTOP
-  @media all and (min-width: 1280px) {
-    // margin-left: 67px;
-    // margin-right: 68px;
-    // margin-bottom: 60px;
+@keyframes intro {
+  from {
+    opacity: 0;
+    color: $color-brightorange;
+    transform: scale(2) rotate(-150deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
