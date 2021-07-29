@@ -65,7 +65,6 @@
   line-height: 30px;
   color: $color-greyishbrown;
   font-family: $font-family-subtitle;
-  text-transform: capitalize;
 
   //--TABLET
   @media all and (min-width: 768px) {
@@ -141,48 +140,191 @@
 //--------------------------GRID---------------------------------//
 .grid-purchase {
   background-color: $color-iceblue;
-  width: 320px;
+  width: 100vw;
   height: 624px;
   text-align: center;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  //   grid-template-columns: 30px 93px 93px 93px;
-  grid-template-areas: "item-title item-title" "item-one item-two item-three";
+  border: green 1px solid;
+
+  //--TABLET
+  @media all and (min-width: 768px) {
+    height: 397px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    height: 397px;
+  }
 }
 
+.textcontainer {
+  width: 100vw;
+}
 .item-title {
-  width: 290px;
-  height: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 22.5px;
   font-size: 24px;
   color: $color-black;
   font-family: $font-family-title;
-  text-transform: capitalize;
+  border: blue 2px solid;
+
+  //--TABLET
+  @media all and (min-width: 768px) {
+    width: 450px;
+    height: 45px;
+    margin-bottom: 22.5px;
+    font-size: 24px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    width: 730px;
+    height: 45px;
+    margin-top: 60px;
+    margin-bottom: 22.5px;
+    font-size: 32px;
+  }
+}
+.grid-container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 45px;
+  border: solid red 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  width: 180px;
+
+  //TABLET
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item-one item-two item-three";
+    grid-gap: 30px;
+    width: 768px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .gridtitle {
   height: 30px;
   width: 184px;
-  margin-top: 45px;
-  margin-left: 68px;
-  margin-right: 68px;
   font-family: $font-family-title;
   font-size: 18px;
   line-height: 30px;
+  margin: auto;
+
+  //--TABLET
+  @media all and (min-width: 768px) {
+    height: 30px;
+    width: 210px;
+    font-size: 24px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    height: 30px;
+    font-size: 24px;
+  }
 }
 
+// .grid-title:first-letter {
+//   text-transform: uppercase;
+// }
+
 .gridtext {
+  text-align: center;
   height: 63px;
   width: 180px;
-  margin-left: 70px;
-  margin-right: 70px;
   font-family: $font-family-subtitle;
   font-size: 18px;
   line-height: 30px;
+  margin: auto;
+  // margin-bottom: 22.5px;
+
+  @media all and (min-width: 768px) {
+    height: 68px;
+    width: 212.3px;
+    font-size: 20px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    height: 68px;
+    width: 353.8px;
+    font-size: 20px;
+  }
 }
 
-.item-one {
+.button-orange {
+  width: 184px;
+  height: 45px;
+  background-color: $color-brightorange;
+  border-radius: 22.5px;
+  margin-bottom: 60px;
+  margin-top: 22.5px;
+  margin-left: 68px;
+  margin-right: 68px;
+
+  //--TABLET
+  @media all and (min-width: 768px) {
+    // width: 91px;
+    // height: 45px;
+    // margin-left: 39px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    // width: 160px;
+    // height: 45px;
+    // margin-left: 275px;
+  }
+}
+
+.button-more {
+  height: 45px;
+  width: 124px;
+  margin-left: 68;
+  text-decoration: none;
+  text-align: center;
+  color: $color-white;
+  font-family: $font-family-medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 45px;
+
+  //--TABLET
+  @media all and (min-width: 768px) {
+    // margin-left: 33.5px;
+    // margin-right: 32.5px;
+    // margin-bottom: 60px;
+  }
+
+  //--DESKTOP
+  @media all and (min-width: 1280px) {
+    // margin-left: 67px;
+    // margin-right: 68px;
+    // margin-bottom: 60px;
+  }
 }
