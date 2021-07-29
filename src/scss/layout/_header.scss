@@ -10,8 +10,8 @@
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 568px;
+  width: 100vw;
+  height: 100vh;
 
   // TABLET
   @media all and (min-width: 768px) {
@@ -32,7 +32,7 @@
   justify-content: center;
   text-align: center;
   color: $color-white;
-  border: solid red 2px;
+  // border: solid red 2px;
   margin-top: -17.7em;
 
   @media all and (min-width: 768px) {
@@ -44,7 +44,6 @@
   @media all and (min-width: 1280px) {
     height: 384px;
     margin-top: -24em;
-    //   width: 33rem;
   }
 }
 

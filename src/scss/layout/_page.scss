@@ -112,7 +112,6 @@
   color: $color-white;
   transition: color ease 1s;
   background-color: $color-brightorange;
-  // border: 2px solid $color-brightorange;
   .button-go {
     color: $color-white;
   }
@@ -154,7 +153,7 @@
   width: 100vw;
   height: 624px;
   text-align: center;
-  border: green 1px solid;
+  // border: green 1px solid;
 
   //--TABLET
   @media all and (min-width: 768px) {
@@ -185,9 +184,10 @@
   margin-top: 30px;
   margin-bottom: 22.5px;
   font-size: 24px;
+  transform: translateY(20px);
   color: $color-black;
   font-family: $font-family-title;
-  border: blue 2px solid;
+  // border: blue 2px solid;
 
   //--TABLET
   @media all and (min-width: 768px) {
@@ -212,7 +212,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 45px;
-  border: solid red 2px;
+  // border: solid red 2px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
