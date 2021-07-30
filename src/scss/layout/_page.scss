@@ -1,6 +1,7 @@
 // --------------------------ARTICLE---------------------------------//
 .page__main {
-  width: 100%;
+  max-width: 100vw;
+  margin: 0px;
 }
 .article-one {
   background-color: $color-white;
@@ -61,7 +62,7 @@
 .paragraph-text {
   max-width: 290px;
   font-size: 18px;
-  margin: 15px 0 30px;
+  // margin: 15px 0 30px;
   line-height: 30px;
   color: $color-greyishbrown;
   font-family: $font-family-subtitle;
@@ -88,7 +89,6 @@
   width: 76px;
   height: 45px;
   border: 2px solid $color-brightorange;
-  //   padding: 30px 214px 0 0;
   border-radius: 22.5px;
   margin-bottom: 45px;
   margin-top: 20px;
@@ -150,10 +150,9 @@
 //--------------------------GRID---------------------------------//
 .grid-purchase {
   background-color: $color-iceblue;
-  width: 100vw;
+  max-width: 100vw;
   height: 624px;
   text-align: center;
-  // border: green 1px solid;
 
   //--TABLET
   @media all and (min-width: 768px) {
@@ -167,7 +166,7 @@
 }
 
 .textcontainer {
-  width: 100vw;
+  max-width: 100vw;
 }
 .item-title {
   display: flex;
@@ -187,7 +186,6 @@
   transform: translateY(20px);
   color: $color-black;
   font-family: $font-family-title;
-  // border: blue 2px solid;
 
   //--TABLET
   @media all and (min-width: 768px) {
@@ -207,16 +205,17 @@
   }
 }
 .grid-container {
+  max-width: 100vw;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 45px;
-  // border: solid red 2px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
   width: 180px;
+  // border: solid red 2px;
 
   //TABLET
   @media all and (min-width: 768px) {
@@ -259,10 +258,6 @@
     font-size: 24px;
   }
 }
-
-// .grid-title:first-letter {
-//   text-transform: uppercase;
-// }
 
 .gridtext {
   text-align: center;
@@ -321,7 +316,6 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
 
-  // border: 2px solid $color-darkgreyblue;
   .button-more {
     color: $color-brightorange;
   }

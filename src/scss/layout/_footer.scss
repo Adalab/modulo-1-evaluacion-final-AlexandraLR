@@ -1,7 +1,13 @@
+.page__footer {
+  max-width: 100vw;
+  bottom: 0%;
+  background-color: $color-darkgreyblue;
+}
+
 .flexbutton {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  max-width: 100vw;
   height: 21px;
   // border: red solid 1px;
   transform: translateY(-50%);
@@ -20,21 +26,13 @@
   background-color: #f1f1f1;
 }
 
-.page__footer {
-  width: 100vw;
-  // position: fixed;
-  bottom: 0%;
-  background-color: $color-darkgreyblue;
-  // border: 2px solid orange;
-}
-
 .containerbox {
+  max-width: 100vw;
   display: flex;
   direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 465px;
 
   @media all and (min-width: 768px) {
