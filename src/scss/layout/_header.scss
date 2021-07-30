@@ -5,6 +5,10 @@
   padding: 15px 14px;
   background-color: $color-cerulean;
 }
+
+.menu:hover {
+  background-color: $color-brightorange;
+}
 .container-hero {
   background-image: url("../images/cover.jpg");
   background-size: cover;
@@ -106,6 +110,9 @@
   padding: 18px 12px 15.3px 13px;
   background-color: $color-white;
   border-radius: 50%;
+  animation-name: blur;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 
   //TABLET
   @media all and (min-width: 768px) {
@@ -120,5 +127,21 @@
     margin-left: 618px;
     margin-right: 617px;
     margin-bottom: 13px;
+  }
+}
+
+.scrolldown:hover {
+  background-color: $color-lightblue;
+}
+
+@keyframes blur {
+  from {
+    opacity: 0;
+    color: $color-darkgreyblue;
+    transform: scale(2) rotate(-150deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

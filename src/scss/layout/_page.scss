@@ -324,11 +324,12 @@
 @keyframes intro {
   from {
     opacity: 0;
-    color: $color-brightorange;
-    transform: scale(2) rotate(-150deg);
+    color: $color-darkgreyblue;
+    transform: scale(2) rotate(-360deg);
   }
   to {
     opacity: 1;
+    color: $color-darkgreyblue;
     transform: scale(1);
   }
 }

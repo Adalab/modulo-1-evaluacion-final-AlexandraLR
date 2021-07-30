@@ -26,6 +26,10 @@
   background-color: #f1f1f1;
 }
 
+.arrow:hover {
+  background-color: $color-lightblue;
+}
+
 .containerbox {
   max-width: 100vw;
   display: flex;
