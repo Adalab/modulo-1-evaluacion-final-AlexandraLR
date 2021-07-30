@@ -1,57 +1,62 @@
-.containerbutton {
-  width: 100%;
+.flexbutton {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
   height: 21px;
   border: red solid 1px;
+  // position: absolute;
+  transform: translateY(-50%);
+  align-items: center;
 }
 
 .arrow {
-  //   margin-top: 45px;
-  //   margin-left: 123px;
-  //   margin-right: 122px;
-  //   margin-bottom: 45px;
+  transform: translateY(-2vh);
+  align-items: center;
+  justify-content: center;
   width: 42px;
   height: 43px;
   padding: 12px 11px 12.4px 10px;
   background-color: $color-white;
   border-radius: 50%;
   background-color: #f1f1f1;
-  transform: translateY(-50%);
-  margin-left: auto;
-  margin-right: auto;
 
   //TABLET
   @media all and (min-width: 768px) {
-    margin-top: 30px;
-    margin-left: 362px;
-    margin-right: 361px;
-    margin-bottom: 45px;
+    // margin-top: -25px;
+    // // margin-left: 362px;
+    // // margin-right: 361px;
+    // // margin-bottom: 45px;
   }
   // DESKTOP
   @media all and (min-width: 1280px) {
-    margin-top: 30px;
-    margin-left: 618px;
-    margin-right: 617px;
-    margin-bottom: 13px;
+    // margin-top: -25px;
+    // // margin-left: 618px;
+    // // margin-right: 617px;
+    // // margin-bottom: 13px;
   }
 }
 
 .page__footer {
   // position: fixed;
   bottom: 0%;
+  background-color: $color-darkgreyblue;
+  border: 2px solid orange;
+}
+
+.containerbox {
   display: flex;
   direction: column;
-
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: $color-darkgreyblue;
 }
 
 .copyright {
   display: flex;
   flex-direction: column;
   text-align: center;
-  order: 4;
+  // order: 4;
   width: 210px;
   height: 30px;
   font-family: $font-family-subtitle;
@@ -61,7 +66,7 @@
 
   @media all and (min-width: 768px) {
     flex-direction: row;
-    order: -1;
+    // order: -1;
   }
 }
 
@@ -104,4 +109,6 @@
   font-family: $font-family-subtitle;
   font-size: 16px;
   color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
